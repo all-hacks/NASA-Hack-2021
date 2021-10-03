@@ -134,6 +134,16 @@ const ThreeScene = () => {
           <ThreeDebris key={index} position={position} color="yellow" size="0.5" />
         ))
       }
+      {
+        iridiumPositions.map((position, index) => (
+          <ThreeDebris key={index} position={position} color="orange" size="0.5" />
+        ))
+      }
+      {
+        cosmosPositions.map((position, index) => (
+          <ThreeDebris key={index} position={position} color="green" size="0.5" />
+        ))
+      }
     </Canvas>
   );
 };
